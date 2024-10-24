@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Lifestyle Vibes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/tambahanstyle.css" />
+
+    <style>
+      /* Animasi untuk kotak kontak */
+      .card {
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      /* Efek mengambang pada tombol sosial media */
+      .btn-outline-primary {
+        transition: transform 0.3s ease;
+      }
+
+      .btn-outline-primary:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="progressBar"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Lifestyle Vibes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="subscribe.html">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1 class="display-4 mb-4">Get in Touch</h1>
+            <p class="lead mb-5">
+              Have questions? We'd love to hear from you. Send us a message and
+              we'll respond as soon as possible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Direct Contact -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+              <div class="card-body">
+                <i class="bi bi-telephone display-4 text-primary mb-4"></i>
+                <h3 class="h4 mb-3">Call Us</h3>
+                <p class="mb-3">Mon - Fri, 9am - 6pm</p>
+                <p class="mb-0">
+                  <a href="tel:+1234567890" class="text-decoration-none"
+                    >+62 856-7769-8921</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+              <div class="card-body">
+                <i class="bi bi-envelope display-4 text-primary mb-4"></i>
+                <h3 class="h4 mb-3">Email Us</h3>
+                <p class="mb-3">24/7 Support</p>
+                <p class="mb-0">
+                  <a
+                    href="mailto:hello@lifestylevibes.com"
+                    class="text-decoration-none"
+                    >Lifestyle&Vibes@yahoo.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Office -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+              <div class="card-body">
+                <i class="bi bi-geo-alt display-4 text-primary mb-4"></i>
+                <h3 class="h4 mb-3">Visit Us</h3>
+                <p class="mb-3">Our Office</p>
+                <p class="mb-0">
+                  Jl. Letjen S. Parman No.1, RT.6/RW.16, Tomang, Kec. Grogol
+                  petamburan, Kota Jakarta Barat
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow">
+              <div class="card-body p-5">
+                <h2 class="text-center mb-4">Send Us a Message</h2>
+                <form id="contactForm">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label">First Name</label>
+                      <input type="text" class="form-control" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Last Name</label>
+                      <input type="text" class="form-control" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Email</label>
+                      <input type="email" class="form-control" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Phone</label>
+                      <input type="tel" class="form-control" />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Subject</label>
+                      <input type="text" class="form-control" required />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Message</label>
+                      <textarea
+                        class="form-control"
+                        rows="5"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary w-100">
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Follow Us</h2>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#" class="btn btn-outline-primary rounded-circle">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="btn btn-outline-primary rounded-circle">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="#" class="btn btn-outline-primary rounded-circle">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="btn btn-outline-primary rounded-circle">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 border-top">
+      <div class="container">
+        <div class="text-center">
+          <small class="text-muted">
+            <a href="#" class="text-decoration-none text-muted"
+              >Privacy Policy</a
+            >
+            •
+            <a href="#" class="text-decoration-none text-muted"
+              >Terms & Conditions</a
+            >
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/js/progress-bar.js"></script>
+  </body>
+</html>

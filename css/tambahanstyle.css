@@ -1,0 +1,71 @@
+/* Navbar hover  */
+.navbar-nav .nav-item .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #0d6efd;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+/* Clips Section */
+.clips-section {
+  padding: 50px 0;
+  background-color: rgb(236, 250, 252);
+}
+
+/* Quotes Section */
+.quotes-moments-section {
+  padding: 100px 0;
+  background-color: #fafafa;
+}
+
+.quotes-moments-section img {
+  transition: transform 0.3s ease;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.quotes-moments-section img:hover {
+  transform: scale(1.05);
+}
+
+.blockquote {
+  font-style: italic;
+  border-left: 5px solid #6a0dad;
+  padding-left: 15px;
+  color: #4b0082;
+}
+
+#progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #1E90FF;
+  z-index: 9999;
+}
